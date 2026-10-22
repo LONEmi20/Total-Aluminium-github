@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Aluminium - Distributor Aluminium Berkualitas di Indonesia</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#2F327D', 
+                        secondary: '#E53E3E', 
+                        dark: '#1A202C',
+                        light: '#F7FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .map-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.75rem;
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 antialiased selection:bg-primary selection:text-white">
+
+    <div class="bg-gray-100 border-b border-gray-200 hidden md:block">
+        <div class="container mx-auto px-6 py-2 flex justify-between items-center text-sm text-gray-600">
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-primary transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-primary transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-primary transition"><i class="fas fa-share-alt"></i></a>
+            </div>
+            <div class="flex space-x-6">
+                <a href="mailto:info@totalaluminium.id" class="flex items-center hover:text-primary transition">
+                    <i class="fas fa-envelope mr-2 text-primary"></i> info@totalaluminium.id
+                </a>
+                <a href="tel:085156994135" class="flex items-center hover:text-primary transition">
+                    <i class="fab fa-whatsapp mr-2 text-green-500 text-lg"></i> 0851-5699-4135
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3">
+                <img src="assets/images/logoTotalAluminium.jpg" 
+                    alt="Total Aluminium Logo" class="h-10 md:h-12 object-contain">
+            </a>
+
+            <nav class="hidden lg:flex space-x-8 items-center font-medium text-gray-700">
+                <a href="#home" class="hover:text-primary transition border-b-2 border-transparent hover:border-primary pb-1">Home</a>
+                <a href="#about" class="hover:text-primary transition border-b-2 border-transparent hover:border-primary pb-1">About</a>
+                <a href="#products" class="hover:text-primary transition border-b-2 border-transparent hover:border-primary pb-1">Our Product</a>
+                <a href="#portfolio" class="hover:text-primary transition border-b-2 border-transparent hover:border-primary pb-1">Our Portfolio</a>
+                <a href="#contact" class="hover:text-primary transition border-b-2 border-transparent hover:border-primary pb-1">Contact</a>
+                <a href="#contact" class="bg-primary text-white px-5 py-2.5 rounded-lg flex items-center gap-2 hover:bg-indigo-800 transition shadow-md hover:shadow-lg">
+                    <i class="fas fa-user-tie"></i> Chat CS
+                </a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="lg:hidden text-gray-700 text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="flex flex-col px-6 py-4 space-y-4 font-medium text-gray-700">
+                <a href="#home" class="hover:text-primary mobile-link">Home</a>
+                <a href="#about" class="hover:text-primary mobile-link">About</a>
+                <a href="#products" class="hover:text-primary mobile-link">Our Product</a>
+                <a href="#portfolio" class="hover:text-primary mobile-link">Our Portfolio</a>
+                <a href="#contact" class="hover:text-primary mobile-link">Cabang & Kontak</a>
+                <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-lg text-center mt-2 mobile-link">Chat CS</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative bg-dark text-white min-h-[100vh] flex items-center">
+
+        <img src="assets/images/totalaluminiumbogor1.jpg" 
+             alt="Pabrik Aluminium" 
+             class="absolute inset-0 w-full h-full object-cover z-0 opacity-40">
+        
+        <div class="container mx-auto px-6 relative z-10 py-20">
+            <div class="max-w-2xl text-white space-y-6">
+                <div class="inline-block px-4 py-2 bg-blue-900/50 border border-blue-500 rounded-full text-sm font-semibold tracking-widest uppercase">
+        Distributor Aluminium Terpercaya
+        </div>
+
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+        TOTAL ALUMINIUM
+        </h1>
+    
+        <h2 class="text-3xl md:text-4xl font-semibold text-blue-400 leading-snug">
+        Solusi Kebutuhan Aluminium Extrusion Anda.
+        </h2>
+
+        <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-xl">
+        Kami menyediakan produk aluminium berkualitas tinggi dengan standar pabrik. Cocok untuk kebutuhan arsitektural, industri, dan konstruksi di seluruh Indonesia.
+        </p>
+
+        <div class="flex flex-wrap gap-4 pt-4">
+            <a href="#" class="px-8 py-3 bg-red-600 hover:bg-red-700 rounded-lg font-semibold transition duration-300">
+            Lihat Produk
+            </a>
+            <a href="#" class="px-8 py-3 bg-gray-800/80 hover:bg-gray-700 border border-gray-600 rounded-lg font-semibold transition duration-300">
+            Hubungi Agen Terdekat
+        </a>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white relative z-20 -mt-10 mx-4 md:mx-auto md:max-w-6xl rounded-2xl shadow-xl border border-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+                <div class="p-4">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 text-primary text-2xl">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Best Service</h3>
+                    <p class="text-gray-600 text-sm">Kami menjual produk aluminium berkualitas tinggi dengan pelayanan maksimal dari hulu ke hilir.</p>
+                </div>
+                <div class="p-4 pt-8 md:pt-4">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 text-primary text-2xl">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Expert Team</h3>
+                    <p class="text-gray-600 text-sm">Tim ahli kami berpengalaman puluhan tahun dalam memberikan rekomendasi profil aluminium yang tepat.</p>
+                </div>
+                <div class="p-4 pt-8 md:pt-4">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 text-primary text-2xl">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Quality Guarantee</h3>
+                    <p class="text-gray-600 text-sm">Standar mutu terjamin untuk setiap batang aluminium extrusion yang kami distribusikan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 w-full relative">
+                    <img src="https://images.unsplash.com/photo-1587293852726-0d4731f24d78?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Gudang Total Aluminium" class="rounded-2xl shadow-2xl z-10 relative">
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-primary rounded-2xl -z-0 hidden md:block"></div>
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-1 bg-primary"></div>
+                        <h2 class="text-primary font-bold uppercase tracking-widest text-sm">Tentang Kami</h2>
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Total Aluminium</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Kami menawarkan produk-produk di bidang aluminium dengan kualitas terbaik di Indonesia. Sebagai salah satu distributor utama, kami menyediakan berbagai merk terkemuka dengan harga kompetitif untuk kebutuhan proyek skala kecil hingga besar.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Komitmen kami adalah memberikan pelayanan terbaik melalui ketersediaan stok yang konsisten, pengiriman tepat waktu, serta dukungan konsultasi teknis dari tim ahli kami.
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-4 border-t border-gray-200 pt-8">
+                        <div>
+                            <h4 class="text-3xl font-extrabold text-primary mb-1">350<span class="text-secondary">+</span></h4>
+                            <p class="text-sm text-gray-500 font-medium">Varian Produk</p>
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-extrabold text-primary mb-1">120<span class="text-secondary">+</span></h4>
+                            <p class="text-sm text-gray-500 font-medium">Proyek Selesai</p>
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-extrabold text-primary mb-1">99<span class="text-secondary">%</span></h4>
+                            <p class="text-sm text-gray-500 font-medium">Kepuasan Klien</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center max-w-5xl">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-10 h-1 bg-primary"></div>
+                <h2 class="text-primary font-bold uppercase tracking-widest text-sm">Katalog</h2>
+                <div class="w-10 h-1 bg-primary"></div>
+            </div>
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Product</h3>
+            <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+                Kami menyediakan merk-merk aluminium berkualitas terstandar seperti Inkalum, Trivalum, Alexindo, Global, serta ACP Alushark.
+            </p>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left mb-12">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden border border-gray-100 group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="assets/images/profil9103.png" alt="Profil 9103" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-2 py-1 rounded">Best Seller</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-1 text-gray-900">PROFIL 9103</h4>
+                        <p class="text-primary font-medium text-sm mb-3">Rel Bawah Double</p>
+                        
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden border border-gray-100 group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                        
+                        <img src="assets/images/profil60414.png" alt="Profil 60414" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-1 text-gray-900">PROFIL 60414</h4>
+                        <p class="text-primary font-medium text-sm mb-3">Kusen Z Sekrup 3"</p>
+                        
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden border border-gray-100 group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                         
+                        <img src="assets/images/profil8130.png" alt="Profil 8130" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-1 text-gray-900">PROFIL 8130</h4>
+                        <p class="text-primary font-medium text-sm mb-3">Stopper Daun Jendela</p>
+                    
+                    </div>
+                </div>
+
+
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden border border-gray-100 group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                         
+                        <img src="assets/images/profil9572.png" alt="Profil 8130" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-1 text-gray-900">PROFIL 9572</h4>
+                        <p class="text-primary font-medium text-sm mb-3">Kusen Jendela Tanduk</p>
+                    
+                    </div>
+                </div>
+
+
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden border border-gray-100 group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                         
+                        <img src="assets/images/profil4318.png" alt="Profil 8130" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-1 text-gray-900">PROFIL 4318</h4>
+                        <p class="text-primary font-medium text-sm mb-3">Sprandrel Double</p>
+                    
+                    </div>
+                </div>
+
+
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden border border-gray-100 group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                         
+                        <img src="assets/images/framehandle.png" alt="Profil 8130" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-1 text-gray-900">FRAME HANDLE ALUMINIUM</h4>
+                    
+                    </div>
+                </div>
+
+            <!-- Download Catalogs -->
+            <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                <h4 class="text-lg font-bold mb-6 text-gray-800">Download E-Katalog Resmi Kami</h4>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="bg-white border-2 border-red-500 text-red-600 hover:bg-red-50 font-semibold py-2 px-6 rounded flex items-center gap-2 transition">
+                        <i class="fas fa-file-pdf"></i> Katalog Trivalum
+                    </button>
+                    <a href="assets/images/catalog-alexindo.pdf" target="_blank" button class="bg-white border-2 border-red-500 text-red-600 hover:bg-red-50 font-semibold py-2 px-6 rounded flex items-center gap-2 transition">
+                        <i class="fas fa-file-pdf"></i> Katalog Alexindo
+                    </a>
+                    <button class="bg-white border-2 border-red-500 text-red-600 hover:bg-red-50 font-semibold py-2 px-6 rounded flex items-center gap-2 transition">
+                        <i class="fas fa-file-pdf"></i> Katalog Inkalum
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-1 bg-primary"></div>
+                <h2 class="text-primary font-bold uppercase tracking-widest text-sm">Proyek Kami</h2>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Our Portfolio</h3>
+                <p class="text-gray-600 max-w-lg md:text-right">
+                    Bukti nyata kualitas material kami di berbagai proyek perumahan, gedung perkantoran, dan fasilitas publik.
+                </p>
+            </div>
+
+            <!-- Portfolio Grid (Improved Layout from small boxes to a proper grid) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6">
+                <!-- Portfolio Item 1 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer aspect-square">
+                    <img src="assets/images/portfolio1a.jpg" alt="Gedung Perkantoran" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <h4 class="text-white font-bold text-xl">Apartemen Royal Sentul Park</h4>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer aspect-square">
+                    <img src="assets/images/portfolio2.jpg" alt="Residensial" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <h4 class="text-white font-bold text-xl">One East Penthouse & Residences Collection </h4>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer aspect-square">
+                    <img src="assets/images/portfolio3a.jpg" alt="Pusat Perbelanjaan" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <h4 class="text-white font-bold text-xl">Transpark Cibubur</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- button untuk lainnya 
+                <div class="text-center mt-10">
+                <button class="bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold py-3 px-8 rounded-lg transition">
+                    Lihat Proyek Lainnya
+                </button>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="py-12 bg-white border-y border-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-gray-400 text-sm font-semibold uppercase tracking-widest mb-8">Partner Resmi Kami</h3>
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-70">
+                <div class="w-24 md:w-32 ">
+                    <img src="assets/images/globalaluminium.jpg" alt="Global Aluminium">
+                </div>
+                <div class="w-24 md:w-32 grayscale hover:grayscale-0 transition duration-300">
+                    <img src="assets/images/ALUSHARK.png" alt="Alushark">
+                </div>
+                <div class="w-24 md:w-32">
+                    <img src="assets/images/alexindo1.png" alt="Alexindo">
+                </div>
+                <div class="w-24 md:w-36 ">
+                    <img src="assets/images/inkalum1.png" alt="Inkalum">
+                </div>
+                <div class="w-24 md:w-24 ">
+                    <img src="assets/images/ykkap.png" alt="Inkalum">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Branches Section (Replaces the spammy Article Dropdown & Fixes tiny maps) -->
+    <section id="contact" class="py-20 bg-dark text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="flex justify-center items-center gap-3 mb-4">
+                    <div class="w-10 h-1 bg-secondary"></div>
+                    <h2 class="text-secondary font-bold uppercase tracking-widest text-sm">Hubungi Kami</h2>
+                    <div class="w-10 h-1 bg-secondary"></div>
+                </div>
+                <h3 class="text-3xl md:text-4xl font-bold mb-4">Cabang Total Aluminium</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Kunjungi gudang dan toko cabang kami yang tersebar di beberapa kota untuk melihat langsung kualitas produk dan berkonsultasi dengan agen kami.
+                </p>
+            </div>
+
+            <!-- Branches Grid: Changed from 4-in-a-row to a spacious 2x2 grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
+                
+                <!-- Cabang 1: Bogor -->
+                <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-primary transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h4 class="text-2xl font-bold text-white mb-1 flex items-center gap-2">
+                                <i class="fas fa-store text-primary"></i> Cabang Bogor
+                            </h4>
+                            <p class="text-secondary font-medium text-sm">Pusat Layanan</p>
+                        </div>
+                        <a href="https://wa.me/6285156994135?text=Halo%20Total%20Aluminium%20Bogor,%20saya%20ingin%20konsultasi..." target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                    <div class="flex items-start gap-3 text-gray-300 text-sm mb-4">
+                        <i class="fas fa-map-marker-alt mt-1 text-gray-500"></i>
+                        <p>Jl. KH. R Abdullah Bin Nuh Jl. Ring Road Taman Yasmin No. 27F RT 2 RW 1 Semplak, Kec. Bogor Barat, Kota Bogor, Jawa Barat 16114</p>
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-300 text-sm mb-6">
+                        <i class="fas fa-phone-alt text-gray-500"></i>
+                        <p>0851-5699-4135</p>
+                    </div>
+                    <!-- Map Container -->
+                    <div class="map-container bg-gray-700">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7927.381975619202!2d106.7628119!3d-6.5606352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5725ecc2e43%3A0xf8098fed13e7fedc!2sTotal%20Aluminium%20Bogor!5e0!3m2!1sid!2sid!4v1792478086896!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Cabang 2: Serpong -->
+                <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-primary transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h4 class="text-2xl font-bold text-white mb-1 flex items-center gap-2">
+                                <i class="fas fa-store text-primary"></i> Cabang Serpong
+                            </h4>
+                            <p class="text-secondary font-medium text-sm">Gudang & Toko</p>
+                        </div>
+                        <a href="https://wa.me/6285701686987?text=Halo%20Total%20Aluminium%20Serpong..." target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                    <div class="flex items-start gap-3 text-gray-300 text-sm mb-4">
+                        <i class="fas fa-map-marker-alt mt-1 text-gray-500"></i>
+                        <p>Jl. Raya Rawa Buntu BSD No. 20, Ciater Kec. Serpong, Kota Tangerang Selatan, Banten 15310</p>
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-300 text-sm mb-6">
+                        <i class="fas fa-phone-alt text-gray-500"></i>
+                        <p>0857-0168-6987</p>
+                    </div>
+                    <!-- Map Container -->
+                    <div class="map-container bg-gray-700">
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.586174244663!2d106.6849935745324!3d-6.317962761824202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e5ef0cbf0761%3A0xd32bccb8c059e971!2sTotal%20Aluminium%20Serpong%20Bsd!5e0!3m2!1sen!2sus!4v1792478510584!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Cabang 3: Serpong 2 -->
+                <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-primary transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h4 class="text-2xl font-bold text-white mb-1 flex items-center gap-2">
+                                <i class="fas fa-store text-primary"></i> Cabang Serpong 2
+                            </h4>
+                        </div>
+                        <a href="https://wa.me/6285211168768" target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                    <div class="flex items-start gap-3 text-gray-300 text-sm mb-4">
+                        <i class="fas fa-map-marker-alt mt-1 text-gray-500"></i>
+                        <p>Blok H6, Komp. Kencana Loka Jl. Artowijoyo No. 33A, Rawa Buntu Kec. Serpong, Kota Tangerang Selatan 15318</p>
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-300 text-sm mb-6">
+                        <i class="fas fa-phone-alt text-gray-500"></i>
+                        <p>0852-1116-8768</p>
+                    </div>
+                    <div class="map-container bg-gray-700">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1015187.917720264!2d106.68145!3d-6.319055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e515d674c0c5%3A0x9f266d4fa3ffce44!2sTotal%20Aluminium%20Serpong!5e0!3m2!1sen!2sus!4v1792478228715!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Cabang 4: Semarang -->
+                <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-primary transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h4 class="text-2xl font-bold text-white mb-1 flex items-center gap-2">
+                                <i class="fas fa-store text-primary"></i> Cabang Semarang
+                            </h4>
+                        </div>
+                        <a href="https://wa.me/6288232721690" target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition shadow-lg">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                    <div class="flex items-start gap-3 text-gray-300 text-sm mb-4">
+                        <i class="fas fa-map-marker-alt mt-1 text-gray-500"></i>
+                        <p>Jl. Citarum No. 85 Bugangan, Kec. Semarang, Jawa Tengah 50126 Indonesia</p>
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-300 text-sm mb-6">
+                        <i class="fas fa-phone-alt text-gray-500"></i>
+                        <p>0882-3272-1690</p>
+                    </div>
+                    <div class="map-container bg-gray-700">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3324803215055!2d110.43370227454164!3d-6.9700460682471235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70f3b8f7221501%3A0x6083c3a344cc400a!2sTotal%20Aluminium%20Semarang!5e0!3m2!1sen!2sus!4v1792478591789!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10 border-t border-gray-800 text-sm relative">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4">
+                <img src="assets/images/logoTotalAluminium.jpg"logo alt="Total Aluminium Mini Logo" class="h-10 rounded">
+                <p>&copy; 2024 Total Aluminium. All Rights Reserved.</p>
+            </div>
+            
+            <div class="flex space-x-4">
+                <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary text-white transition">
+                    <i class="fas fa-share-alt"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 text-white transition">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 text-white transition">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Back to top button inside footer space -->
+        <a href="#home" class="absolute right-6 bottom-10 w-10 h-10 bg-primary text-white rounded flex items-center justify-center hover:bg-indigo-500 shadow-lg transition">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Floating WhatsApp Button (Global) -->
+    <a href="https://wa.me/6285156994135" target="_blank" class="fixed bottom-6 left-6 z-50 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-[0_4px_15px_rgba(34,197,94,0.5)] hover:scale-110 transition-transform duration-300">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const links = document.querySelectorAll('.mobile-link');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                // Change icon
+                const icon = btn.querySelector('i');
+                if(menu.classList.contains('hidden')) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                } else {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                }
+            });
+
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    btn.querySelector('i').classList.remove('fa-times');
+                    btn.querySelector('i').classList.add('fa-bars');
+                });
+            });
+
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 10) {
+                    navbar.classList.add('shadow-md');
+                    navbar.classList.remove('py-4');
+                    navbar.classList.add('py-2');
+                } else {
+                    navbar.classList.remove('shadow-md');
+                    navbar.classList.add('py-4');
+                    navbar.classList.remove('py-2');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
